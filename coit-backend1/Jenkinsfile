@@ -10,7 +10,7 @@ pipeline {
         stage('docker-build') {
             steps {
                sh 'echo "Docker Build"'
-               // sh 'cd coit-backend1 && docker build -t amol1996/coit-backend1-92234832:v2 .'
+               // sh 'cd coit-backend1 && docker build -t raja/coit-backend1-92234832:v2 .'
                // sh 'docker images' 
             }
         }
@@ -18,7 +18,7 @@ pipeline {
             steps {
                 sh 'echo "Docker Push"'
                 // sh 'echo "pushing docker image"'
-                // sh 'docker push amol1996/coit-backend1-92234832:v2'
+                // sh 'docker push raja/coit-backend1-92234832:v2'
             }
     }
 }
